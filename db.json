@@ -1,0 +1,69 @@
+{
+  "settings": {
+    "restaurant": "Spice Garden",
+    "taxRate": 5
+  },
+  "menu": [
+    {
+      "id": 1,
+      "name": "Paneer Tikka",
+      "category": "Veg Starters",
+      "price": 220
+    },
+    {
+      "id": 2,
+      "name": "Gobi 65",
+      "category": "Veg Starters",
+      "price": 160
+    },
+    {
+      "id": 3,
+      "name": "Veg Spring Roll",
+      "category": "Veg Starters",
+      "price": 140
+    },
+    {
+      "id": 4,
+      "name": "Chicken 65",
+      "category": "Non-Veg Starters",
+      "price": 240
+    },
+    {
+      "id": 5,
+      "name": "Fish Fingers",
+      "category": "Non-Veg Starters",
+      "price": 280
+    },
+    {
+      "id": 6,
+      "name": "Chicken Lollipop",
+      "category": "Non-Veg Starters",
+      "price": 260  
+    },
+    {
+      "id": 7,
+      "name": "Veg Biryani",
+      "category": "Main Course",
+      "price": 190
+    },
+    {
+      "id": 8,
+      "name": "Chicken Biryani",
+      "category": "Main Course",
+      "price": 260
+    },
+    {
+      "id": 9,
+      "name": "Butter Naan",
+      "category": "Main Course",
+      "price": 40
+    },
+    {
+      "id": 10,
+      "name": "Paneer Butter Masala",
+      "category": "Main Course",
+      "price": 230
+    }
+  ],
+  "orders": []
+}

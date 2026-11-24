@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Billing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1 id="restaurantName">Restaurant</h1>
+    <nav>
+      <button class="tab active" data-view="order">New order</button>
+      <button class="tab" data-view="history">Past bills</button>
+    </nav>
+  </header>
+
+  <main id="orderView" class="layout">
+    <section class="menu">
+      <div id="categories" class="chips"></div>
+      <div id="menuGrid" class="grid"></div>
+    </section>
+
+    <aside class="bill">
+      <h2>Current order</h2>
+      <div class="fields">
+        <input id="customer" placeholder="Customer name">
+        <input id="table" type="number" min="1" placeholder="Table no.">
+      </div>
+      <ul id="items" class="items"></ul>
+      <p id="empty" class="empty">No items yet. Tap a dish to add it.</p>
+      <dl class="totals">
+        <div><dt>Subtotal</dt><dd id="subtotal">₹0.00</dd></div>
+        <div><dt id="taxLabel">GST</dt><dd id="tax">₹0.00</dd></div>
+        <div class="grand"><dt>Total</dt><dd id="total">₹0.00</dd></div>
+      </dl>
+      <div class="actions">
+        <button id="clear" class="ghost">Clear</button>
+        <button id="generate" class="primary">Generate bill</button>
+      </div>
+    </aside>
+  </main>
+
+  <main id="historyView" class="history hidden">
+    <h2>Past bills</h2>
+    <div id="orders"></div>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="receipt" id="receipt"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
